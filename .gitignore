@@ -1,0 +1,6 @@
+/vendor/
+/runtime/*
+!/runtime/.gitignore
+/web/assets/*
+!/web/assets/.gitignore
+composer.lock

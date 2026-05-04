@@ -1,0 +1,35 @@
+{
+  "name": "stansoft/solutions-yii",
+  "description": "Yii rebuild of the Stansofts Solutions interactive website.",
+  "type": "project",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-ctype": "*",
+    "ext-mbstring": "*",
+    "yiisoft/yii2": "^2.0.54"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": ""
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    },
+    "process-timeout": 1800
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  }
+}
